@@ -21,7 +21,7 @@ jobs:
       run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hello_world
+      run: docker build . --file Dockerfile --tag tyronesch/python_hello_world
     - name: list images 
       run: docker image ls 
 
