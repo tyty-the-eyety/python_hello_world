@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8-slim
 RUN  mkdir WORK_REPO
 RUN  cd  WORK_REPO
 WORKDIR  /WORK_REPO
