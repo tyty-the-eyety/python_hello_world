@@ -19,7 +19,7 @@ jobs:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
           DOCKER_PASS: ${{secrets.DOCKER_PASS}}          
       run: |
-          docker login -u DOCKER_USER -p DOCKER_PASS
+          docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag tyronesch/hello_world:$(date +%s)
 
