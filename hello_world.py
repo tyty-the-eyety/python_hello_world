@@ -3,6 +3,7 @@ from time import sleep
 # the program will print hello world
 #  every 1 second foever
 #while True:
-print("Hello, World")
-sleep(10)
+for i in range(0,10):
+    print("Hello, World")
+    sleep(1)
 
