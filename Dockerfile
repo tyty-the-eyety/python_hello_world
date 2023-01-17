@@ -1,5 +1,5 @@
 #FROM python:3.8-slim
-FROM 3.12-rc-bullseye
+FROM arm32v7/python:3
 RUN  mkdir WORK_REPO
 RUN  cd  WORK_REPO
 WORKDIR  /WORK_REPO
