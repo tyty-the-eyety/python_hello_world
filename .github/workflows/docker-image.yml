@@ -24,6 +24,8 @@ jobs:
       run: docker build . --file Dockerfile --tag tyronesch/python_hello_world
     - name: list images 
       run: docker image ls 
+    - name: run images 
+      run: docker run  tyronesch/python_hello_world
 
     - name: Docker Push #tyronesch/python_hello_world:tagname
       run: docker push tyronesch/python_hello_world
