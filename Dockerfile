@@ -1,5 +1,5 @@
 #FROM python:3.8-slim
-FROM arm32v7/python:3
+FROM balenalib/raspberry-pi-debian-python:latest
 RUN  mkdir WORK_REPO
 RUN  cd  WORK_REPO
 WORKDIR  /WORK_REPO
